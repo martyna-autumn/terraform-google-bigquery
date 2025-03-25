@@ -197,7 +197,7 @@ variable "external_tables" {
     autodetect            = bool,
     compression           = optional(string,"NONE"),
     ignore_unknown_values = optional(bool,false),
-    max_bad_records       = optional(number),
+    max_bad_records       = optional(number, 0),
     schema                = optional(string),
     source_format         = optional(string),
     source_uris           = list(string),
